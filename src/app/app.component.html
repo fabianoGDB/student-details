@@ -1,4 +1,8 @@
-<div class="student-record">
+<students-details-side-bar
+  [isExpanded]="sidebarExpanded"
+  (toggleSideBar)="sidebarExpanded = !sidebarExpanded"
+></students-details-side-bar>
+<div class="student-record" [ngClass]="{ sidebarExpanded: sidebarExpanded }">
   <form>
     <div class="mb-3 row">
       <label
