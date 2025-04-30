@@ -2,6 +2,8 @@
 <ag-grid-angular
   class="ag-theme-alphine"
   (gridReady)="onGridReady($event)"
+  [columnDefs]="columnDefs"
   [rowData]="apiResponse"
+  style="height: 800px; width: 100%"
 >
 </ag-grid-angular>
