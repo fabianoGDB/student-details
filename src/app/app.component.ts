@@ -3,7 +3,6 @@ import { RouterOutlet } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { SideBarComponent } from "./side-bar/side-bar.component";
 
-
 @Component({
   selector: 'students-details-root',
   standalone: true,

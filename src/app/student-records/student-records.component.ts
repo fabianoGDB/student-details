@@ -1,6 +1,10 @@
 import { Component } from '@angular/core';
 import { AgGridModule } from 'ag-grid-angular';
-import { ColDef, GridApi } from "ag-grid-community"
+import { ColDef, GridApi, ModuleRegistry } from "ag-grid-community"
+import { ClientSideRowModelModule } from 'ag-grid-community';
+
+
+ModuleRegistry.registerModules([ClientSideRowModelModule]);
 
 @Component({
   selector: 'students-details-student-records',
